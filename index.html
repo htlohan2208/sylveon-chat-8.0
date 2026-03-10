@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sylveon</title>
+</head>
+<body style="background:pink;text-align:center;font-family:Arial;">
+
+<h1>💖 Sylveon Chat 💖</h1>
+
+<input id="msg" placeholder="Digite sua mensagem">
+<button onclick="enviar()">Enviar</button>
+
+<ul id="chat"></ul>
+
+<script>
+function enviar(){
+let m = document.getElementById("msg").value
+let li = document.createElement("li")
+li.textContent = m
+document.getElementById("chat").appendChild(li)
+document.getElementById("msg").value=""
+}
+</script>
+
+</body>
+</html>
